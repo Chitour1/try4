@@ -204,10 +204,20 @@
 
         // --- Main Components ---
         const Header = () => (
-            <header className="py-6 text-center border-b border-gray-800">
-                <h1 className="text-4xl md:text-5xl font-bold text-gradient-gold px-4">
-                   تقييم تقني لموقع المركز العربي للأبحاث ودراسة السياسات
-                </h1>
+            <header className="py-8 text-center border-b border-gray-800">
+                <div className="container mx-auto px-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-gradient-gold mb-8">
+                       تقييم تقني لموقع المركز العربي للأبحاث ودراسة السياسات
+                    </h1>
+                    <div className="max-w-xl mx-auto p-1.5 bg-gradient-to-r from-[#F7D060] to-[#D5A121] rounded-xl shadow-lg shadow-amber-500/10">
+                        <img 
+                            src="https://archive.org/download/2acf-2394-f-2a-4-45f-8-afa-2-3a-6fa-4dbde-25_202507/2acf2394-f2a4-45f8-afa2-3a6fa4dbde25.png" 
+                            alt="صورة توضيحية للموقع الحالي للمركز العربي" 
+                            className="rounded-lg w-full"
+                            onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/1200x600/030712/F7D060?text=Image+Not+Found'; }}
+                        />
+                    </div>
+                </div>
             </header>
         );
 
